@@ -552,7 +552,7 @@ def get_test_label_nn(tf_idf_model, model):
         #print(prob, prob.shape) ###(17,)
         pred = np.argmax(prob)
         #print (pred)
-        predictions.append(pred-1)
+        predictions.append(pred+1)
     return predictions
 
 def NN():
