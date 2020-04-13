@@ -642,7 +642,7 @@ def get_test_label_nn(tf_idf_model, model):
         #print(prob, prob.shape) ###(17,)
         pred = np.argmax(prob)
         #print (pred)
-        predictions.append(pred-1)
+        predictions.append(pred+1)
     return predictions
 
 def save_plots(accs_train_cv_lr,accs_val_cv_lr,f1_score_train_cv_lr,f1_score_val_cv_lr):
